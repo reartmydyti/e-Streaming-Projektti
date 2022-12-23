@@ -96,7 +96,7 @@ namespace MovieDB.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                 
-                // for adding roles to the db comment this code after creating your admin user to avoid creating more admin users
+                // kodi per me u regjistru si admin cdo user
                    /* if(!await _roleManager.RoleExistsAsync(SD.Admin))
                     {
                         await _roleManager.CreateAsync(new IdentityRole(SD.Admin));
@@ -142,7 +142,7 @@ namespace MovieDB.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
+            
             return Page();
         }
     }
