@@ -40,13 +40,13 @@ namespace MovieDB.Areas.Admin.Controllers
        
 
  
-        //create button action
+        
         public IActionResult Add()
         {
             return View();
         }
 
-        //saving in db
+        
         [HttpPost, ActionName("Add")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Added(MoviesDB movie)
@@ -74,7 +74,7 @@ namespace MovieDB.Areas.Admin.Controllers
             return View(movie);
         }
 
-        //detail view
+        
         public async Task<IActionResult> Movie(int? id, MoviesDB cat)
         {
             if(id == null)
@@ -86,7 +86,7 @@ namespace MovieDB.Areas.Admin.Controllers
             return View(movie);
         }
 
-        //edit page
+       
         public async Task<IActionResult> Edit(int? id)
         {
             if(id == null)
@@ -97,7 +97,7 @@ namespace MovieDB.Areas.Admin.Controllers
             return View(movie);
         }
 
-        //edit and save
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(MoviesDB mov)
