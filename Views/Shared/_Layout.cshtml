@@ -52,9 +52,29 @@
                                 <a class="nav-link" asp-area="Identity" asp-controller="Account" asp-action="Register">Add users</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Manage users</a>
-                            </li>
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Other Addings</a>
+                                <div class="dropdown-menu">
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Directors"
+                                    asp-action="Index">Add Directors</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Nacionaliteti"
+                                    asp-action="Index">Add Nationality</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Producers"
+                                    asp-action="Index">Add Producers</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Actors"
+                                    asp-action="Index">Add Actors</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Releases"
+                                    asp-action="Index">Add Release Date</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Channels"
+                                    asp-action="Index">Add Channels</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Seasons"
+                                    asp-action="Index">Add Seasons</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Resolutions"
+                                    asp-action="Index">Add Resolutions</a>
+                                    <a class="nav-link dropdown-item" asp-area="Admin" asp-controller="Titrat"
+                                    asp-action="Index">Add Subtitles Language</a>
                         }
 
                     </ul>
